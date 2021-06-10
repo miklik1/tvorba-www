@@ -9,11 +9,11 @@ const FaceRecognition = ({ celebrity, imageUrl, last}) => {
                     <img alt='' src={imageUrl} />
                 </div>
                 <div>
-                    <p>{celebrity == '' ? '' : "Is this " + celebrity.name +"?"}</p>
-                    <p>{celebrity == '' ? '' : "I'm " + Math.trunc(celebrity.value * 100) + "% sure."}</p>
+                    <p>{celebrity === '' ? '' : "Is this " + celebrity.name +"?"}</p>
+                    <p>{celebrity === '' ? '' : "I'm " + Math.trunc(celebrity.value * 100) + "% sure."}</p>
                 </div>
             </div>
-            Last searched: {last}
+            <p className="Last"> Last searched: {last} </p>
         </div>
     );
 }

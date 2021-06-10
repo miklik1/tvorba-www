@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import ImageLink from './components/ImageLink/ImageLink';
-import Rank from './components/Rank/Rank';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Clarifai from 'clarifai';
 import './App.css';
@@ -14,8 +13,8 @@ class App extends Component {
   constructor() {
         super();
         this.state = {
-          input: '',
-          imageUrl: '',
+          input: 'https://www.onlyu.cz/wp-content/uploads/2020/11/angelina_jolie-2.jpg',
+          imageUrl: 'https://www.onlyu.cz/wp-content/uploads/2020/11/angelina_jolie-2.jpg',
           celebrity:  '',
           last: localStorage.getItem('celebrity') == null ? '' : localStorage.getItem('celebrity')
         }
